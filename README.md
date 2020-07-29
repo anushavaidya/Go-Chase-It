@@ -26,3 +26,19 @@ Directory Structure
 
 
 ## How to run 
+
+* Clone this repository
+* Open the repository and make 
+cd /home/workspace/catkin_ws/
+catkin_make
+* Launch my_robot in Gazebo to load both the world and plugins 
+roslaunch my_robot world.launch
+* Launch ball_chaser and process_image nodes 
+cd /home/workspace/catkin_ws/
+source devel/setup.bash
+roslaunch ball_chaser ball_chaser.launch
+* Visualize 
+cd /home/workspace/catkin_ws/
+source devel/setup.bash
+rosrun rqt_image_view rqt_image_view  
+
