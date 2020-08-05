@@ -36,7 +36,7 @@ Directory Structure
 * Launch ball_chaser and process_image nodes \
 `cd /home/workspace/catkin_ws/` \
 `source devel/setup.bash` \
-`roslaunch ball_chaser ball_chaser.launch` \
+`roslaunch ball_chaser ball_chaser.launch` 
 * Visualize 
 `cd /home/workspace/catkin_ws/` \
 `source devel/setup.bash` \
