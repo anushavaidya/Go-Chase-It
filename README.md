@@ -16,29 +16,26 @@ In this project, I created two ROS packages drive_bot and ball_chaser. The detai
 * Write a process_image C++ node that reads your robot’s camera image, analyzes it to determine the presence and position of a white ball. If a white ball exists in the image, your node should request a service via a client to drive the robot towards it.
 * The ball_chaser.launch should run both the drive_bot and the process_image nodes.
 
-## What you will need to run
+## What you will need to run:
 * Gazebo >= 7.0
 * ROS Kinetic
 * make >= 4.1 (Is installed by default on most Linux distros)
 
-## Project Description 
-Directory Structure 
 
-
-## How to run 
+## How to run:
 
 * Clone this repository
 * Open the repository and make \
-`cd /home/workspace/catkin_ws/`  \
+`cd /{your_directory}/catkin_ws/`  \
 `catkin_make`
 * Launch my_robot in Gazebo to load both the world and plugins \
 `roslaunch my_robot world.launch`
 * Launch ball_chaser and process_image nodes \
-`cd /home/workspace/catkin_ws/` \
+`cd /{your_directory}/catkin_ws/` \
 `source devel/setup.bash` \
 `roslaunch ball_chaser ball_chaser.launch` 
-* Visualize 
-`cd /home/workspace/catkin_ws/` \
+* Visualize \
+`cd /{your_directory}/catkin_ws/` \
 `source devel/setup.bash` \
 `rosrun rqt_image_view rqt_image_view`  
 
